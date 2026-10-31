@@ -6,8 +6,6 @@ name: Build Installers
 # llm-docs/built-version-testing-architecture.md.
 run-name: "Build Installers${{ inputs.skip-auto-smoke && ' [skip-auto-smoke]' || '' }}"
 on:
-  schedule:
-    - cron: "0 4 * * *"
   workflow_dispatch:
     inputs:
       publish-release:

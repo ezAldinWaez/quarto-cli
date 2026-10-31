@@ -1,9 +1,6 @@
 # Upate the timing test file required for parallel test
 on:
   workflow_dispatch:
-  schedule:
-    # run weekly on Monday
-    - cron: "13 3 * * 1"
 
 name: Update timing test file
 jobs:

@@ -7,12 +7,6 @@ on:
   pull_request_target:
     types:
       - closed
-  # Daily cleanup of stale julia caches on long-lived branches. julia-actions/cache@v3
-  # does not run delete-old-caches on the default branch (by design, to avoid races
-  # between concurrent runs), so caches accumulate. This job keeps only the newest
-  # cache per (workflow, os) tuple.
-  schedule:
-    - cron: "0 4 * * *"
   workflow_dispatch:
 
 jobs:

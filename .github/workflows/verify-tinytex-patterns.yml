@@ -1,8 +1,6 @@
 name: Verify TinyTeX Pattern Coverage
 
 on:
-  schedule:
-    - cron: '0 2 * * *'  # Daily 2am UTC (matches TinyTeX daily release)
   workflow_dispatch:      # Manual trigger for testing
 
 permissions:

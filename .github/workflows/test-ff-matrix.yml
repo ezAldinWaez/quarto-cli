@@ -50,9 +50,6 @@ on:
         required: false
         type: string
         default: ""
-  schedule:
-    # run daily at 1am UTC
-    - cron: "0 1 * * *"
   push:
     branches: [main]
     paths-ignore:

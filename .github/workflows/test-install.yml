@@ -19,9 +19,6 @@ on:
       - "src/core/download.ts"
       - "src/core/retry.ts"
       - ".github/workflows/test-install.yml"
-  schedule:
-    # Weekly Monday 9am UTC — detect upstream CDN/API breakage
-    - cron: "0 9 * * 1"
 
 permissions:
   contents: read
